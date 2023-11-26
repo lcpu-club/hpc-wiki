@@ -1,0 +1,6 @@
+_build/
+docs_build/
+site/
+.vscode/
+**/.DS_Store
+.env
