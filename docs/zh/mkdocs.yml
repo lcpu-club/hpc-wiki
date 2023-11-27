@@ -26,6 +26,10 @@ theme:
     text: Noto Sans
     code: Source Code Pro
 plugins:
+- redirects:
+    redirect_maps:
+      performance-analysis/nsys.md: gpu/nsys.md
+      hardware/gpu.md: gpu/arch.md
 - search
 - minify:
     minify_html: true
@@ -40,14 +44,18 @@ nav:
   - hpc-intro/what-is-hpc.md
   - hpc-intro/hpc-history.md
   - hpc-intro/modern-hpc.md
-- HPC比赛简介:
-  - competition/competition-intro.md
-  - competition/sc.md
-  - competition/isc.md
-  - competition/asc.md
-  - competition/hpcgame.md
-  - competition/other.md
-- 超算平台的使用:
+- HPC比赛:
+  - 比赛简介:
+    - competition/competition-intro.md
+    - competition/sc.md
+    - competition/isc.md
+    - competition/asc.md
+    - competition/hpcgame.md
+    - competition/other.md
+  - 功耗管理:
+    - power-management/intro.md
+    - power-management/perception.md
+- 超算平台:
   - platform/platform-intro.md
   - platform/cluster.md
   - platform/cloud.md
@@ -57,28 +65,47 @@ nav:
   - hardware/hardware-intro.md
   - hardware/processor.md
   - hardware/memory.md
-  - hardware/gpu-and-fpga.md
+  - hardware/gpu.md
+  - hardware/fpga-and-asics.md
   - hardware/interconnect.md
   - hardware/storage.md
 - 并行编程:
   - parallel-programming/parallel-programming-intro.md
-  - parallel-programming/mpi.md
-  - parallel-programming/openmp.md
-  - parallel-programming/gpu.md
-  - parallel-programming/nccl.md
-  - parallel-programming/opencl.md
-  - parallel-programming/openacc.md
-  - parallel-programming/mpi4py.md
-- 通信:
-  - communication/intro.md
-  - communication/model.md
-  - communication/cost.md
-  - communication/deadlock.md
-- 性能分析:
-  - performance-analysis/intro.md
-  - performance-analysis/basics.md
-  - performance-analysis/vtune.md
-  - performance-analysis/nsys.md
+  - 基础：线程与进程模型:
+    - thread-process/intro.md
+    - thread-process/process.md
+    - thread-process/thread.md
+    - thread-process/more.md
+  - 基础：内存模型:
+    - memory-model/intro.md
+    - memory-model/consistency.md
+    - memory-model/cache.md
+    - memory-model/numa.md
+  - 基础：通信:
+    - communication/intro.md
+    - communication/model.md
+    - communication/cost.md
+    - communication/deadlock.md
+  - 编程工具:
+    - parallel-programming/mpi.md
+    - parallel-programming/openmp.md
+    - parallel-programming/mpi4py.md
+  - 性能分析:
+    - performance-analysis/intro.md
+    - performance-analysis/basics.md
+    - performance-analysis/vtune.md
+    - performance-analysis/nsys.md
+- GPU编程:
+  - gpu/intro.md
+  - gpu/arch.md
+  - CUDA专题:
+    - gpu/cuda.md
+    - gpu/cuda-advanced.md
+    - gpu/nccl.md
+    - gpu/nsys.md
+  - gpu/openacc.md
+  - gpu/opencl.md
+  - gpu/hip.md
 - Benchmark:
   - benchmark/intro.md
   - benchmark/hpl.md
@@ -89,9 +116,6 @@ nav:
   - sci-mlsys/parallelism.md
   - sci-mlsys/sparsity.md
   - sci-mlsys/quantization.md
-- 功耗管理:
-  - power-management/intro.md
-  - power-management/perception.md
 - Misc:
   - misc/faq.md
   - misc/shell.md
