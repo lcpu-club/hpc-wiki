@@ -25,7 +25,6 @@ python3 scripts/docs.py serve
 
 **mkdocs 本地部署的网站是动态更新的，即当你修改并保存 md 文件后，刷新页面就能随之动态更新。**
 
-## What can you get?
 
 在阅读 Wiki 之前，这里有一些小建议：
 
