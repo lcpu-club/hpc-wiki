@@ -38,8 +38,8 @@ nav:
   - index.md
   - 贡献指南:
     - contribute/before-contributing.md
-    - contribute/basic-contribute-approach.md
-    - contribute/documentation-requirement.md
+    - contribute/docs-organization.md
+    - contribute/docs-style.md
 - HPC简介:
   - hpc-intro/what-is-hpc.md
   - hpc-intro/hpc-history.md
